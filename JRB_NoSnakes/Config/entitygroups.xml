@@ -1,0 +1,17 @@
+<NoSnakes>
+
+<!--
+	Groups: (these are just 'contain' parameters for entity groups, for target paths)
+	Zombie (only uppercase, general groups including;night,Biomes)
+	Horde (all hordes)
+	Group (groups biome specific + zombie with lower case that uppercase misses)
+	Animal (biomes mostly)
+	Wolf (stand alone)
+
+	
+	Snake -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'animalSnake')]/@name">zombieStripper</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Animal')]/entity[contains(@name, 'animalSnake')]/@name">zombieStripper</set>
+	
+	
+</NoSnakes>
